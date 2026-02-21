@@ -1,0 +1,14 @@
+
+@plugin "daisyui";
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lemonada:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@theme {
+    --color-background: #ffffff;
+    --color-foreground: #a30402;
+    --color-card: #dedede;
+
+    /**fonts */
+    
+     --font-jost: Jost, sans-serif;
+}
