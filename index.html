@@ -6,84 +6,326 @@
     <title>Document</title>
    <link rel="stylesheet" href="./assets/output.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome for icons -->
-
+<link erl="">
 </head>
-<body class="bg-background font-jost ">
+<body class="bg-background font-jost border-0">
 
 
-               <!------- NAVBAR---------->
-<div class="navbar bg-white shadow-sm px-6 sm:px-6 md:px-12 flex justify-between items-center">
-
-  <!-- LEFT (hamburger + logo) -->
-  <div class="flex items-center gap-4">
-    <!-- Hamburger -->
-    <button class="btn btn-square btn-ghost lg:hidden w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           fill="none" viewBox="0 0 24 24"
-           class="inline-block h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 stroke-current">
-        <path stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-
-    <!-- Logo -->
-    <img src="logo.png" alt="my.decor" class="w-7 h-auto sm:w-8 md:w-10 object-contain">
-  </div>
-
-  <!-- CENTER MENU -->
-  <div class="hidden lg:flex">
-    <ul class="flex gap-4 md:gap-6 font-medium text-[13px] sm:text-[14px] md:text-[15px]">
-      <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Homepages <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
-      <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Shop <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
-      <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Product <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
-      <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Blog <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
-      <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Pages <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
-    </ul>
-  </div>
-
-  <!-- RIGHT ICONS -->
-  <div class="flex items-center gap-6 sm:gap-3 md:gap-4 ">
-    <!-- Search -->
-    <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center
-                   w-7 h-7 sm:w-6 sm:h-6 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-
-    <!-- User -->
-    <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center
-                   w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
-      <i class="fa-regular fa-user"></i>
-    </button>
-
-    <!-- Wishlist -->
-    <div class="indicator">
-      <span class="indicator-item badge badge-error badge-[8px] sm:badge-xs md:badge-sm">0</span>
-      <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center
-                     w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
-        <i class="fa-regular fa-heart"></i>
+  <!-- NAVBAR -->
+  <div class="navbar bg-white shadow-sm px-6 sm:px-6 md:px-12 flex justify-between items-center">
+    
+    <!-- LEFT (hamburger + logo) -->
+    <div class="flex items-center gap-4">
+      <!-- Hamburger -->
+      <button class="btn btn-square btn-ghost lg:hidden w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             class="inline-block h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
       </button>
+
+      <!-- Logo -->
+      <img src="logo.png" alt="my.decor" class="max-w-[120px] h-auto object-contain">
     </div>
 
-    <!-- Cart -->
-    <div class="indicator">
-      <span class="indicator-item badge badge-error badge-[8px] sm:badge-xs md:badge-sm">0</span>
-      <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center
-                     w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
-        <i class="fa-solid fa-cart-shopping"></i>
+    <!-- CENTER MENU -->
+    <div class="hidden lg:flex">
+      <ul class="flex gap-4 md:gap-6 font-medium text-[13px] sm:text-[14px] md:text-[15px]">
+        <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Homepages <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
+        <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Shop <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
+        <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Product <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
+        <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Blog <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
+        <li><a class="text-black hover:text-red-500 flex items-center gap-1 transition-colors duration-200">Pages <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT ICONS -->
+    <div class="flex items-center gap-4 sm:gap-3 md:gap-4">
+      <!-- Search -->
+      <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center w-7 h-7 sm:w-6 sm:h-6 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
+        <i class="fa-solid fa-magnifying-glass"></i>
       </button>
+
+      <!-- User -->
+      <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
+        <i class="fa-regular fa-user"></i>
+      </button>
+
+      <!-- Wishlist -->
+      <div class="indicator">
+        <span class="indicator-item badge badge-error badge-xs">0</span>
+        <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+      </div>
+
+      <!-- Cart -->
+      <div class="indicator">
+        <span class="indicator-item badge badge-error badge-xs">0</span>
+        <button class="btn btn-circle bg-gray-200 hover:bg-gray-300 flex items-center justify-center w-7 h-7 sm:w-7 sm:h-7 md:w-9 md:h-9 text-xs sm:text-sm md:text-lg">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!-- END NAVBAR -->
+
+  <!-- HERO SECTION -->
+  <div class="hero min-h-[350px]" style="background-image: url('img_hero/bg-search.jpg');">
+    <div class="hero-overlay bg-black/40"></div>
+    <div class="hero-content text-center text-white">
+      <div class="max-w-3xl">
+        <h1 class="mb-4 text-4xl md:text-5xl font-bold">Search What You Need</h1>
+        <p class="mb-8 text-lg opacity-90">Over +2000 Product In Store</p>
+
+        <!-- Search Bar -->
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-2xl">
+            <input type="text" placeholder="Search products..." class="input w-full rounded-full h-14 px-6 text-black"/>
+            <button class="absolute right-2 top-1/2 -translate-y-1/2 btn btn-circle btn-sm">🔍</button>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+  <!-- END HERO SECTION -->
 
-</div>
-<!--end of NAVBAR -->
+  <!-- CATEGORY SECTION -->
+  <section class="py-16 px-8 bg-base-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+
+        <!-- Card 1 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-1.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Furniture</h3></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-2.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Outdoor</h3></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-3.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Bed & Bath</h3></div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-4.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+        <!-- Card 5 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-5.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+         <!-- Card 6 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-6.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+        <!-- Card 7 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-7.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+        <!-- Card 8 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-8.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
 
 
 
-<!-- HERO SECTION -->
+        <!-- Card 9 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-9.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+
+        <!-- Card 10 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-10.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+
+        <!-- Card 11 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-11.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+
+
+
+        <!-- Card 12 -->
+        <div class="card bg-base-100 border-0 hover:shadow-xl transition">
+          <figure class="px-6 pt-6"><img src="img1/cat-12.jpg" class="h-24 object-contain" /></figure>
+          <div class="card-body items-center text-center p-4"><h3 class="font-medium">Decor</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+         <!-- END CATEGORY SECTION -->
+
+
+
+<!--Daily Flash Sale-->
+<section class="py-16 px-8 bg-base-100">
+  <div class="max-w-7xl mx-auto">
+    <!-- Title -->
+    <h2 class="text-3xl font-bold mb-10 text-center text-foreground">Daily Flash Sale!</h2>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Product 1 -->
+      <div class="card bg-base-100 shadow-sm hover:shadow-lg transition relative">
+        <figure class="px-6 pt-6">
+          <img src="img1/9-450x450.jpg"
+               alt="Chair"
+               class="h-48 object-contain" />
+        </figure>
+
+        <!-- HOT badge -->
+        <!-- <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">HOT</span> -->
+
+        <!-- Countdown -->
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-red-700 text-white text-xs font-mono px-3 py-1 rounded">
+          ⏰ 00:10:23
+        </div>
+
+        <div class="card-body items-center text-center p-4">
+          <h3 class="card-title text-base md:text-lg">N200X Modern Style Chairs</h3>
+
+          <!-- Prices -->
+          <div class="flex gap-2 items-center justify-center mt-2">
+            <span class="line-through text-gray-400 text-sm">$150.00</span>
+            <span class="text-red-600 font-semibold text-sm md:text-base">$129.00</span>
+          </div>
+
+          <!-- Actions -->
+          <div class=" flex items-center justify-center justify-between mt-4 gap-23">
+            <button class="btn  btn-sm md:btn-md border-0 hover:text-foreground">+ Add to cart</button>
+            <button class="btn btn-ghost btn-sm"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card bg-base-100 shadow-sm hover:shadow-lg transition relative">
+        <figure class="px-6 pt-6">
+          <img src="img1/18-450x450.jpg"
+               alt="Bed"
+               class="h-48 object-contain" />
+        </figure>
+        <div class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-red-700 text-white text-xs font-mono px-3 py-1 rounded">
+          ⏰ 00:12:45
+        </div>
+
+        <div class="card-body items-center text-center p-4">
+          <h3 class="card-title text-base md:text-lg">Bed Full Set from Italia</h3>
+          <div class="flex gap-2 items-center justify-center mt-2">
+            <span class="line-through text-gray-400 text-sm">$599.00</span>
+            <span class="text-red-600 font-semibold text-sm md:text-base">$499.00</span>
+          </div>
+          <div class=" flex items-center justify-center justify-between mt-4 gap-23">
+            <button class="btn  btn-sm md:btn-md border-0 hover:text-foreground">+ Add to cart</button>
+            <button class="btn btn-ghost btn-sm"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 (HOT example) -->
+      <div class="card bg-base-100 shadow-sm hover:shadow-lg transition relative">
+        <figure class="px-6 pt-6">
+          <img src="img1/15-450x450.jpg"
+               alt="Table"
+               class="h-48 object-contain" />
+        </figure>
+        <!-- HOT badge -->
+        <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">HOT</span>
+        <div class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-red-700 text-white text-xs font-mono px-3 py-1 rounded">
+          ⏰ 00:05:12
+        </div>
+
+        <div class="card-body items-center text-center p-4">
+          <h3 class="card-title text-base md:text-lg">Table and Chair Set</h3>
+          <div class="flex gap-2 items-center justify-center mt-2">
+            <span class="line-through text-gray-400 text-sm">$900.00</span>
+            <span class="text-red-600 font-semibold text-sm md:text-base">$799.00</span>
+          </div>
+          <div class=" flex items-center justify-center justify-between mt-4 gap-23">
+            <button class="btn  btn-sm md:btn-md border-0 hover:text-foreground">+ Add to cart</button>
+            <button class="btn btn-ghost btn-sm"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="card bg-base-100 shadow-sm hover:shadow-lg transition ">
+        <figure class="relative px-6 pt-6">
+          <img src="img1/13-450x450.jpg"
+               alt="Sofa"
+               class="h-48 object-contain" />
+        </figure>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-red-700 text-white text-xs font-mono px-3 py-1 rounded ">
+          ⏰ 00:15:30
+        </div>
+
+        <div class="card-body items-center text-center p-4">
+          <h3 class="card-title text-base md:text-lg">Sofa Couch from Korean</h3>
+          <div class="flex gap-2 items-center justify-center mt-2">
+            <span class="line-through text-gray-400 text-sm">$140.00</span>
+            <span class="text-red-600 font-semibold text-sm md:text-base">$99.00</span>
+          </div>
+          <!--Actions-->
+          <div class=" flex items-center justify-center justify-between mt-4 gap-23">
+            <button class="btn  btn-sm md:btn-md border-0 hover:text-foreground">+ Add to cart</button>
+            <button class="btn btn-ghost btn-sm"><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--End Daily Flash Sale-->
+
+<!-- big sale off all items up to 50% -->
+<section class="relative bg-foreground mx-16 mt-10 p-6">
+  <!-- بوردر داخلي متقطع -->
+  <div class="absolute inset-1 border-2 border-dashed border-white pointer-events-none rounded-md"></div>
+
+  <div class="relative text-center">
+    <h1 class="text-white font-bold text-lg md:text-2xl">
+      BIG SALE OFF ALL ITEMS UP TO 50% OFF
+    </h1>
+    <p class="text-white text-sm mt-2">
+      Coming soon on September. <span class="underline">View More</span>
+    </p>
+  </div>
+</section>
+<!-- end sale 50% -->
 
  
-
-
 </body>
 </html>

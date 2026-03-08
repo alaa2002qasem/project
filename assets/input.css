@@ -12,3 +12,8 @@
     
      --font-jost: Jost, sans-serif;
 }
+
+--my-box {
+  border-style: none; /* تشيل أي خط حدود */
+}
+
